@@ -6,7 +6,6 @@ const SOCIAL = {
 };
 
 const modal = document.getElementById("modal");
-const btnBook = document.getElementById("btnBook");
 const btnCopy = document.getElementById("btnCopy");
 const year = document.getElementById("year");
 const leadForm = document.getElementById("leadForm");
@@ -29,7 +28,7 @@ function closeModal() {
   modal.setAttribute("aria-hidden", "true");
 }
 
-btnBook.addEventListener("click", () => openModal(""));
+// Кнопка "Записаться" в шапке теперь ведет на dikidi.ru, обработчик не нужен
 
 document.addEventListener("click", (e) => {
   if (e.target?.dataset?.close) closeModal();
