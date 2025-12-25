@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Студия красоты</title>
+  <meta name="description" content="Студия красоты — услуги, прайс, контакты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="На верх">
+        <img class="brand__logo" src="./assets/logo.jpg" alt="Логотип студии красоты" />
+      </a>
+
+      <div class="topbar__meta">
+        <div class="meta">
+          <div class="meta__label">Телефон</div>
+          <a class="meta__value" href="tel:+79990000000">+7 (999) 000-00-00</a>
+        </div>
+
+        <div class="meta">
+          <div class="meta__label">Адрес</div>
+          <a class="meta__value" href="#map">г. Ваш город, ТЦ «Название», 2 этаж</a>
+        </div>
+
+        <div class="meta">
+          <div class="meta__label">Режим</div>
+          <div class="meta__value">Ежедневно 10:00–21:00</div>
+        </div>
+
+        <div class="topbar__cta">
+          <button class="btn btn--primary" id="btnBook">Записаться</button>
+          <button class="btn" id="btnCopy">Скопировать телефон</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <div class="badge">СТИЛЬ • АККУРАТНОСТЬ • СЕРВИС</div>
+          <h1 class="h1">Студия красоты</h1>
+          <p class="lead">
+            Премиальный минимализм: чистый образ, точная работа, удобная запись.
+            Чёрно-белая эстетика с золотым акцентом.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="tel:+79990000000">Позвонить</a>
+            <a class="btn" href="#price">Смотреть прайс</a>
+          </div>
+
+          <div class="hero__chips">
+            <div class="chip">ТЦ рядом</div>
+            <div class="chip">Опытные мастера</div>
+            <div class="chip">Чистота и комфорт</div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="card mediaCard">
+            <div class="mediaGrid">
+              <figure class="media">
+                <img src="./assets/tc.jpg" alt="Фото ТЦ" loading="lazy" />
+                <figcaption>ТЦ</figcaption>
+              </figure>
+              <figure class="media">
+                <img src="./assets/salon.jpg" alt="Фото помещения" loading="lazy" />
+                <figcaption>Помещение</figcaption>
+              </figure>
+            </div>
+            <div class="mediaCard__footer">
+              <div class="kv">
+                <div class="kv__k">Адрес</div>
+                <div class="kv__v">г. Ваш город, ТЦ «Название», 2 этаж</div>
+              </div>
+              <div class="kv">
+                <div class="kv__k">Часы</div>
+                <div class="kv__v">Ежедневно 10:00–21:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE -->
+    <section class="section" id="price">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Прайс</h2>
+          <p class="muted">Цены примерные — обновим под твой список.</p>
+        </div>
+
+        <div class="priceGrid">
+          <div class="card">
+            <div class="card__head">
+              <h3 class="h3">Волосы</h3>
+              <div class="pill">Топ</div>
+            </div>
+
+            <div class="priceList">
+              <div class="row"><div class="row__name">Стрижка женская</div><div class="row__dots"></div><div class="row__price">от 1500 ₽</div></div>
+              <div class="row"><div class="row__name">Стрижка мужская</div><div class="row__dots"></div><div class="row__price">от 1200 ₽</div></div>
+              <div class="row"><div class="row__name">Укладка</div><div class="row__dots"></div><div class="row__price">от 1000 ₽</div></div>
+              <div class="row"><div class="row__name">Окрашивание</div><div class="row__dots"></div><div class="row__price">от 3500 ₽</div></div>
+              <div class="row"><div class="row__name">Уход/восстановление</div><div class="row__dots"></div><div class="row__price">от 2000 ₽</div></div>
+            </div>
+
+            <div class="card__actions">
+              <button class="btn btn--primary" data-service="Волосы">Записаться на волосы</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__head">
+              <h3 class="h3">Ногти</h3>
+              <div class="pill">Популярно</div>
+            </div>
+
+            <div class="priceList">
+              <div class="row"><div class="row__name">Маникюр (аппаратный)</div><div class="row__dots"></div><div class="row__price">от 1400 ₽</div></div>
+              <div class="row"><div class="row__name">Покрытие гель-лак</div><div class="row__dots"></div><div class="row__price">от 1600 ₽</div></div>
+              <div class="row"><div class="row__name">Снятие</div><div class="row__dots"></div><div class="row__price">от 400 ₽</div></div>
+              <div class="row"><div class="row__name">Педикюр</div><div class="row__dots"></div><div class="row__price">от 2200 ₽</div></div>
+              <div class="row"><div class="row__name">Дизайн (1 ноготь)</div><div class="row__dots"></div><div class="row__price">от 150 ₽</div></div>
+            </div>
+
+            <div class="card__actions">
+              <button class="btn btn--primary" data-service="Ногти">Записаться на ногти</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__head">
+              <h3 class="h3">Брови/ресницы</h3>
+              <div class="pill">Акцент</div>
+            </div>
+
+            <div class="priceList">
+              <div class="row"><div class="row__name">Коррекция бровей</div><div class="row__dots"></div><div class="row__price">от 800 ₽</div></div>
+              <div class="row"><div class="row__name">Окрашивание бровей</div><div class="row__dots"></div><div class="row__price">от 900 ₽</div></div>
+              <div class="row"><div class="row__name">Ламинирование бровей</div><div class="row__dots"></div><div class="row__price">от 1800 ₽</div></div>
+              <div class="row"><div class="row__name">Ламинирование ресниц</div><div class="row__dots"></div><div class="row__price">от 2200 ₽</div></div>
+            </div>
+
+            <div class="card__actions">
+              <button class="btn btn--primary" data-service="Брови/ресницы">Записаться</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="note" id="map">
+          <div class="note__title">Как нас найти</div>
+          <div class="note__text">
+            г. Ваш город, ТЦ «Название», 2 этаж • ориентир: рядом с ________.
+            <span class="gold">Добавим карту (Яндекс/Google) на следующем шаге.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="social card">
+          <div class="social__left">
+            <h2 class="h2">Соцсети</h2>
+            <p class="muted">Кнопки ведут на твои страницы — просто вставь ссылки.</p>
+          </div>
+
+          <div class="social__right">
+            <a class="sbtn" href="#" id="ig" target="_blank" rel="noopener">Instagram*</a>
+            <a class="sbtn" href="#" id="tg" target="_blank" rel="noopener">Telegram</a>
+            <a class="sbtn" href="#" id="wa" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="sbtn sbtn--gold" href="tel:+79990000000">Позвонить</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__line"></div>
+          <div class="footer__grid">
+            <div class="muted">© <span id="year"></span> Студия красоты</div>
+            <div class="muted small">
+              *При необходимости переименуем/уберём кнопку под твой регион и требования.
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Запись">
+      <div class="modal__head">
+        <div class="modal__title">Запись</div>
+        <button class="iconBtn" data-close="1" aria-label="Закрыть">✕</button>
+      </div>
+
+      <form class="form" id="leadForm">
+        <div class="form__row">
+          <label class="label">Услуга</label>
+          <input class="input" name="service" id="serviceInput" placeholder="Например: Маникюр" />
+        </div>
+
+        <div class="form__row">
+          <label class="label">Имя</label>
+          <input class="input" name="name" placeholder="Ваше имя" required />
+        </div>
+
+        <div class="form__row">
+          <label class="label">Телефон</label>
+          <input class="input" name="phone" placeholder="+7..." required />
+        </div>
+
+        <div class="form__row">
+          <label class="label">Комментарий</label>
+          <textarea class="input textarea" name="comment" placeholder="Удобное время / мастер / пожелания"></textarea>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <button class="btn" type="button" data-close="1">Отмена</button>
+        </div>
+
+        <div class="form__hint muted small">
+          Сейчас форма просто показывает данные и генерирует сообщение для мессенджера.
+          Подключим реальную отправку при загрузке на хостинг.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
