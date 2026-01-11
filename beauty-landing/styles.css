@@ -219,7 +219,7 @@ img{max-width:100%; display:block}
 }
 .gallery__viewport{
   position:relative;
-  height:220px;
+  height:300px;
   border-radius:16px;
   overflow:hidden;
   border:1px solid rgba(255,255,255,.10);
@@ -384,7 +384,7 @@ img{max-width:100%; display:block}
   .btn, .sbtn{width:100%; text-align:center}
   .mediaGrid{grid-template-columns:1fr}
   .mediaCard__footer{grid-template-columns:1fr}
-  .gallery__viewport{height:180px}
+  .gallery__viewport{height:220px}
   .map-container iframe{height:300px}
   .row{
     grid-template-columns: 1fr auto;
