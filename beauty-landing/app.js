@@ -17,6 +17,50 @@ document.getElementById("ig").href = SOCIAL.instagram || "#";
 document.getElementById("tg").href = SOCIAL.telegram || "#";
 document.getElementById("wa").href = SOCIAL.whatsapp || "#";
 
+const slider = document.querySelector("[data-slider]");
+if (slider) {
+  const slides = Array.from(slider.querySelectorAll(".gallery__slide"));
+  const dots = Array.from(slider.querySelectorAll("[data-slide]"));
+
+  if (slides.length > 1) {
+    let index = 0;
+    let timerId = null;
+
+    const setActive = (nextIndex) => {
+      index = nextIndex;
+      slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+      dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
+    };
+
+    const start = () => {
+      timerId = setInterval(() => {
+        const next = (index + 1) % slides.length;
+        setActive(next);
+      }, 4200);
+    };
+
+    const stop = () => {
+      if (timerId) clearInterval(timerId);
+      timerId = null;
+    };
+
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const nextIndex = Number.parseInt(dot.dataset.slide, 10) || 0;
+        setActive(nextIndex);
+        stop();
+        start();
+      });
+    });
+
+    slider.addEventListener("mouseenter", stop);
+    slider.addEventListener("mouseleave", start);
+
+    setActive(0);
+    start();
+  }
+}
+
 function openModal(service = "") {
   modal.classList.add("isOpen");
   modal.setAttribute("aria-hidden", "false");
