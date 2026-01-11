@@ -19,16 +19,17 @@ document.getElementById("wa").href = SOCIAL.whatsapp || "#";
 
 const slider = document.querySelector("[data-slider]");
 if (slider) {
+  const track = slider.querySelector(".gallery__track");
   const slides = Array.from(slider.querySelectorAll(".gallery__slide"));
   const dots = Array.from(slider.querySelectorAll("[data-slide]"));
 
-  if (slides.length > 1) {
+  if (track && slides.length > 1) {
     let index = 0;
     let timerId = null;
 
     const setActive = (nextIndex) => {
       index = nextIndex;
-      slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+      track.style.transform = `translateX(-${index * 100}%)`;
       dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
     };
 
