@@ -220,6 +220,7 @@ img{max-width:100%; display:block}
 .gallery__viewport{
   position:relative;
   height:500px;
+  min-height:500px;
   border-radius:16px;
   overflow:hidden;
   border:1px solid rgba(255,255,255,.10);
@@ -374,6 +375,7 @@ img{max-width:100%; display:block}
   .priceBoard{grid-template-columns:1fr}
   .media{min-height:180px}
   .h1{font-size:36px}
+  .gallery__viewport{height:420px; min-height:420px}
 }
 
 @media (max-width: 520px){
