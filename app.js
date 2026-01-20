@@ -1,8 +1,8 @@
-const PHONE = "+79990000000"; // поменяй на реальный
+const PHONE = "+79812795722"; // поменяй на реальный
 const SOCIAL = {
   instagram: "https://instagram.com/",   // вставь ссылку или оставь #
   telegram:  "https://t.me/",
-  whatsapp:  "https://wa.me/79990000000" // номер без +, без пробелов
+  whatsapp:  "https://wa.me/79812795722" // номер без +, без пробелов
 };
 
 const modal = document.getElementById("modal");
