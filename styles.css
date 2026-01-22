@@ -405,6 +405,13 @@ figure{margin:0}
     align-items:start;
   }
   .row__dots{display:none}
+  .gallery__dots{
+    flex-wrap:wrap;
+    max-width:260px;
+    margin:12px auto 0;
+    gap:6px;
+  }
+  .dot{width:8px; height:8px}
   body{
     background: var(--bg);
   }
