@@ -271,8 +271,12 @@ figure{margin:0}
 .gallery__dots{
   display:flex;
   justify-content:center;
+  flex-wrap:wrap;
   gap:8px;
   margin-top:12px;
+  padding:0 12px;
+  box-sizing:border-box;
+  max-width:100%;
 }
 .dot{
   width:10px;
@@ -406,10 +410,8 @@ figure{margin:0}
   }
   .row__dots{display:none}
   .gallery__dots{
-    flex-wrap:wrap;
-    max-width:260px;
-    margin:12px auto 0;
     gap:6px;
+    padding:0 8px;
   }
   .dot{width:8px; height:8px}
   body{
