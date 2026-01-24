@@ -1,7 +1,7 @@
 const PHONE = "+79812795722"; // поменяй на реальный
 const SOCIAL = {
   instagram: "https://instagram.com/",   // вставь ссылку или оставь #
-  telegram:  "https://t.me/",
+  telegram:  "https://t.me/gala_studio",
   whatsapp:  "https://wa.me/79812795722" // номер без +, без пробелов
 };
 
