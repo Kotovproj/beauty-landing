@@ -13,9 +13,13 @@ const serviceInput = document.getElementById("serviceInput");
 
 year.textContent = new Date().getFullYear();
 
-document.getElementById("ig").href = SOCIAL.instagram || "#";
-document.getElementById("tg").href = SOCIAL.telegram || "#";
-document.getElementById("wa").href = SOCIAL.whatsapp || "#";
+const igLink = document.getElementById("ig");
+const tgLink = document.getElementById("tg");
+const waLink = document.getElementById("wa");
+
+if (igLink) igLink.href = SOCIAL.instagram || "#";
+if (tgLink) tgLink.href = SOCIAL.telegram || "#";
+if (waLink) waLink.href = SOCIAL.whatsapp || "#";
 
 const slider = document.querySelector("[data-slider]");
 if (slider) {
