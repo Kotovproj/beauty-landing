@@ -463,7 +463,28 @@ figure{margin:0}
 
 @media (max-width: 520px){
   .container{width:calc(100% - 24px)}
-  .brand__logo{width:54px; height:54px}
+  .topbar__inner{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:12px 0;
+  }
+  .topbar__meta{
+    width:100%;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .topbar__cta{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    justify-content:stretch;
+  }
+  .meta{padding:6px 8px}
+  .meta__label{font-size:11px}
+  .meta__value{font-size:14px; line-height:1.35}
+  .brand__logo{width:48px; height:48px}
   .hero{padding-top:26px}
   .hero__actions{flex-direction:column}
   .hero__actions .btn{white-space:normal}
